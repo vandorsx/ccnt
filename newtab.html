@@ -2,20 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Tab</title>
+    <!-- Early script to synchronously apply user-selected colors -->
+    <script src="earlyColor.js"></script>
     <style>
       :root {
-        /* Default colors: light mode white, dark mode black */
+        /* Fallback default colors */
         --light-bg: #ffffff;
         --dark-bg: #000000;
       }
-
       body {
         margin: 0;
         height: 100vh;
         background-color: var(--light-bg);
       }
-
       @media (prefers-color-scheme: dark) {
         body {
           background-color: var(--dark-bg);
@@ -23,7 +24,5 @@
       }
     </style>
   </head>
-  <body>
-    <script src="newtab.js"></script>
-  </body>
+  <body></body>
 </html>
