@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>New Tab</title>
+    <style>
+      :root {
+        /* Default colors: light mode white, dark mode black */
+        --light-bg: #ffffff;
+        --dark-bg: #000000;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: var(--light-bg);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: var(--dark-bg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script src="newtab.js"></script>
+  </body>
+</html>

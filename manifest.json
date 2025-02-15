@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "custom color new tab",
+  "version": "1.0",
+  "description":
+    "Overrides the new tab page with a solid color that adapts to light/dark mode.",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "options_page": "options.html",
+  "permissions": ["storage"]
+}
